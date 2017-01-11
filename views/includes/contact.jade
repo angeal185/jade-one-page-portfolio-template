@@ -1,0 +1,40 @@
+#section3.section
+  section#contact.text-left-block
+    .row.row-no-margin
+      .col-xs-12.col-sm-6.col-lg-6.left-center-text.split-section.spec-padding-bottom.foo
+        .left-center-part
+          h2 Get in touch
+          p.subtitle
+            | Suspendisse sit amet pulvinar ante.
+            strong  ac posuere sapien
+            | , Morbi mattis aliquam pulvinar.
+            br
+            |  Contact us via
+            strong  Phone :
+            a.phone-mail-link(href='tel:66-1254-611') (+61) 000-000
+            |  or
+            strong  Email
+            |  :
+            a.phone-mail-link(href='mailto:#{mail}') #{mail}
+          .row
+            .col-xs-12.col-sm-12.col-lg-12
+              form#contact-form(name='contact-form', method='POST', data-name='Contact Form')
+                .row
+                  .col-xs-12.col-sm-12.col-lg-6
+                    .form-group
+                      input#name.form.form-control(type='text', placeholder='Your Name...', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Your Name...'", name='name', data-name='Name', required='')
+                  .col-xs-12.col-sm-12.col-lg-6
+                    .form-group
+                      input#email.form.form-control(type='email', placeholder='Your Email...', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Your Email...'", name='email-address', data-name='Email Address', required='')
+                  .col-xs-12.col-sm-12.col-lg-12
+                    .form-group
+                      input#subject.form.form-control(type='text', placeholder='Regarding...', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Regarding...'", name='subject', data-name='Subject')
+                  .col-xs-12.col-sm-12.col-lg-12.no-padding
+                    .form-group
+                      textarea#text-area.form.textarea.form-control(placeholder='Your message here... 20 characters Min.', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Your message here... 20 characters Min.'", name='message', data-name='Text Area', required='')
+                button#valid-form.btn.btn-color(type='submit') Send Message
+              #block-answer
+                #answer
+        p.copyright #{footer}
+      .col-xs-12.col-sm-6.col-lg-6.map-info.split-section.foo
+        #map

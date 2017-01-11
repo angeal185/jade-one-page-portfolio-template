@@ -1,0 +1,31 @@
+doctype html
+html.no-js(lang='en-us')
+  head
+    include includes/head.jade
+  body
+    #loading
+      #preloader
+        span
+        span
+    #fullpage
+      include includes/home.jade
+      include includes/about.jade
+      include includes/portfolio.jade
+      include includes/contact.jade
+    include includes/info.jade
+    include includes/notify.jade
+    script(src='/js/jquery.min.js')
+    script(src='/js/app.js')
+    script(src='/js/jquery.easings.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery.fullPage.js')
+    script(src='/js/jquery.countdown.js')
+    script(src='/js/vegas.js')
+    script(src='/js/scrollreveal.min.js')
+    script(src='/js/classie.js')
+    script(src='/js/dialogFx.js')
+    script(src='/js/photoswipe.js')
+    script(src='/js/photoswipe-ui-default.js')
+    script(src='/js/contact-me.js')
+    script(src='/js/notifyMe.js')
+    script(src='/js/main-animated.js')
